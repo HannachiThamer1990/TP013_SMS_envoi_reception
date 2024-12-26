@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- EditText pour saisir le numéro de téléphone -->
+    <EditText
+        android:id="@+id/editTextPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Entrez le numéro de téléphone"
+        android:inputType="phone"
+        android:padding="8dp" />
+
+    <!-- EditText pour saisir le message -->
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Saisissez votre message ici"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Spacer pour centrer le bouton verticalement -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <!-- Button pour envoyer le SMS -->
+    <Button
+        android:id="@+id/buttonSendSms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Envoyer SMS" />
+
+    <!-- Spacer pour équilibrer le bouton verticalement -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
+
